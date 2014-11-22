@@ -1,0 +1,83 @@
+{
+  "name": "da-funk",
+  "version": "0.1.0",
+  "description": "your basic funk formula",
+  "homepage": "https://github.com/heavyk/da-funk",
+  "author": "Kenneth Bentley <mechanicofthesequence@gmail.com>",
+  "contributors": [],
+  "maintainers": [
+    "Kenneth Bentley <mechanicofthesequence@gmail.com>"
+  ],
+  "bugs": {
+    "url": "https://github.com/heavyk/da-funk/issues"
+  },
+  "dependencies": {
+    "co": "~4.0.0",
+    "lodash": "^2.4.1"
+  },
+  "directories": {
+    "example": "example",
+    "lib": "lib",
+    "src": "src"
+  },
+  "engines": {
+    "node": ">=0.11.13"
+  },
+  "license": "Unlicense",
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heavyk/da-funk.git"
+  },
+  "aLIVEsCRIPT": {
+    "directories": {
+      "src": {
+
+      },
+      "lib": {
+
+      }
+    },
+    "compile": {
+      "package.json": "./src/package.json.ls"
+    }
+  },
+  "da-funk": {
+    "doT-funk.description": "make programming as fun as listening to bumpin basslines",
+    "doT-funk.README": "# doT-funk\nTODO: write me!\nlolz, getting there eventually...",
+    "doT-funk": {
+      "format":       "",
+      "evaluate":     "/\\{\\{([\\s\\S]+?)\\}\\}/",
+      "interpolate":  "/\\{\\{=([\\s\\S]+?)\\}\\}/",
+      "encode":       "/\\{\\{!([\\s\\S]+?)\\}\\}/",
+      "use":          "/\\{\\{#([\\s\\S]+?)\\}\\}/",
+      "define":       "/\\{\\{##\\s*([\\w\\.$]+)\\s*(\\:|=)([\\s\\S]+?)#\\}\\}/",
+      "conditional":  "/\\{\\{\\?(\\?)?\\s*([\\s\\S]*?)\\s*\\}\\}/",
+      "iterate":      "/\\{\\{~\\s*(?:\\}\\}|([\\s\\S]+?)\\s*\\:\\s*([\\w$]+)\\s*(?:\\:\\s*([\\w$]+))?\\s*\\}\\})/",
+      "varname":      "boogie",
+      "strip":         false,
+      "append":        true,
+      "selfcontained": false
+    },
+    "meta.description": "this is for future use with forkdb",
+    "meta": {
+      "_key": "heavyk/da-funk",
+      "_origin": []
+    },
+    "compilation": {
+      "file:package.json": [
+        "version"
+      ],
+      "file:lib/da_funk.js": [
+        ".stringify",
+        ".freedom",
+        ".interject",
+        ".objectify",
+        ".merge",
+        ".extend",
+        ".improve",
+        ".embody"
+      ]
+    }
+  }
+}

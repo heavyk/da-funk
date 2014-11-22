@@ -1,0 +1,37 @@
+# EditorConfig is awesome!
+#   http://editorconfig.org
+
+# `root` means it won't look further down the directory structure for more .editorconfig
+root = true
+
+
+# TODO: have alive-script actually parse this, and obey :)
+
+[*]
+# mabybe crazy, and prefer tabs,
+# while we're still using editors, that is..
+indent_style = tab
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[build/*.js,lib/*.js,**/*.json]
+alive-script.infer = true
+
+[*.ls,*.live,*.mechanica,*.machina,*.json]
+indent_size = 2
+alive-script.awesome = true
+
+[*.md,*.html,*.js]
+indent_style = space
+trim_trailing_whitespace = false
+indent_size = 2
+
+[*.js]
+indent_style = space
+trim_trailing_whitespace = true
+
+[lib/**.js]
+indent_style = space
+indent_size = 2
