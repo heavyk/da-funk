@@ -4,6 +4,18 @@
 _ = require \lodash
 Path = require \path
 
+parse-function-basic = (fn) ->
+	fn-txt = if typeof fn is \string => fn else fn.to-string!trim!
+	i = fn-txt.index-of '('
+	ii = fn-txt.index-of ')'
+	iii = fn-txt.index-of 'function'
+	j = fn-txt.index-of '{'
+	jj = fn-txt.last-index-of '}'
+	name = fn-txt.substring iii, i .trim!
+	args = fn-txt.substring ++i, ii .replace (new RegExp ' ', \g), ''
+	body = fn-txt.substring ++j, jj .trim!
+	return { name, args, body, is-generator: ~fn-txt.substring iii, j .index-of \* }
+
 #TODO: if typeof obj is \object then this function, else use JSON.stringify
 regex_slash = new RegExp '\\\\', \g
 regex_quote = new RegExp '"', \g
@@ -403,6 +415,7 @@ stringify.desired_order = (path) ->
 
 # TODO: export stuff here with interfaces compatible with TypeScript
 
+export parse-function-basic
 export stringify
 export freedom
 export interjection

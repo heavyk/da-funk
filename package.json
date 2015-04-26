@@ -31,12 +31,8 @@
   },
   "aLIVEsCRIPT": {
     "directories": {
-      "src": {
-
-      },
-      "lib": {
-
-      }
+      "src": {},
+      "lib": {}
     },
     "compile": {
       "package.json": "./src/package.json.ls"
@@ -46,17 +42,17 @@
     "doT-funk.description": "make programming as fun as listening to bumpin basslines",
     "doT-funk.README": "# doT-funk\nTODO: write me!\nlolz, getting there eventually...",
     "doT-funk": {
-      "format":       "",
-      "evaluate":     "/\\{\\{([\\s\\S]+?)\\}\\}/",
-      "interpolate":  "/\\{\\{=([\\s\\S]+?)\\}\\}/",
-      "encode":       "/\\{\\{!([\\s\\S]+?)\\}\\}/",
-      "use":          "/\\{\\{#([\\s\\S]+?)\\}\\}/",
-      "define":       "/\\{\\{##\\s*([\\w\\.$]+)\\s*(\\:|=)([\\s\\S]+?)#\\}\\}/",
-      "conditional":  "/\\{\\{\\?(\\?)?\\s*([\\s\\S]*?)\\s*\\}\\}/",
-      "iterate":      "/\\{\\{~\\s*(?:\\}\\}|([\\s\\S]+?)\\s*\\:\\s*([\\w$]+)\\s*(?:\\:\\s*([\\w$]+))?\\s*\\}\\})/",
-      "varname":      "boogie",
-      "strip":         false,
-      "append":        true,
+      "format": "",
+      "evaluate": "/\\{\\{([\\s\\S]+?)\\}\\}/",
+      "interpolate": "/\\{\\{=([\\s\\S]+?)\\}\\}/",
+      "encode": "/\\{\\{!([\\s\\S]+?)\\}\\}/",
+      "use": "/\\{\\{#([\\s\\S]+?)\\}\\}/",
+      "define": "/\\{\\{##\\s*([\\w\\.$]+)\\s*(\\:|=)([\\s\\S]+?)#\\}\\}/",
+      "conditional": "/\\{\\{\\?(\\?)?\\s*([\\s\\S]*?)\\s*\\}\\}/",
+      "iterate": "/\\{\\{~\\s*(?:\\}\\}|([\\s\\S]+?)\\s*\\:\\s*([\\w$]+)\\s*(?:\\:\\s*([\\w$]+))?\\s*\\}\\})/",
+      "varname": "boogie",
+      "strip": false,
+      "append": true,
       "selfcontained": false
     },
     "meta.description": "this is for future use with forkdb",
